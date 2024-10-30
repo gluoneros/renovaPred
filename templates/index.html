@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R</title>
+</head>
+<body>
+    <h1>Análisis de viavilidad de un proyecto de energia renovable</h1>
+    <form action="/predict" method="POST">
+        <label for="latitud">Ingrese latitud:</label><br>
+        <input type="text" id="latitud" name="latitud"><br>
+        <label for="longitud">Ingrese longitud:</label><br>
+        <input type="text" id="longitud" name="longitud"><br>
+        <input type="submit" value="Enviar">
+    </form>
+    {% if prediction %}
+        <h2>{{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
