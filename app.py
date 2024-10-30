@@ -33,6 +33,8 @@ def predict():
             viavilidad = "Apto para proyecto solar"
         elif prediction == 2:
             viavilidad = "Apto para proyecto eólico"
+        elif prediction == 3:
+            viavilidad = "Apto para proyecto eolico y solar"
         else:
             viavilidad = "No apto para proyecto solar o eólico"
         
